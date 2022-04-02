@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import useAuth from './../../Hooks/UseFirebase/useAuth';
+import Register from './../../RegisterLoginInfo/Register/Register';
+import Login from './../../RegisterLoginInfo/Login/Login';
 const Header = () => {
     const {user}=useAuth()
     return (
@@ -21,9 +23,48 @@ const Header = () => {
                         user?.email ?            <h2 className='userLink'>{user.email&& <h2><img className='userImage' src={user.photoURL && "https://i.ibb.co/dcrZchh/Rectangle-3-2.png"} alt="" /> 
                         <Link to='/messangerChat' className="chat"><i class="fa-brands fa-facebook-messenger"></i></Link> <b className='userName'>{user.displayName}</b> </h2> }</h2>
 
-                        :<div ><span className='accountStatus'>Create account. <Link to="login">It's free</Link></span> </div>
+                        :<div ><span className='accountStatus'>Create account. <button data-bs-toggle="modal" href="#exampleModalToggle1"  className="navLogin"><u>It's free</u></button></span> </div>
                     }
                 </div>
+                 {/* modal start */}
+                 <div className="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabIndex="-1">
+  <div className="modal-dialog modal-dialog-centered">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalToggleLabel">
+          <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+        </h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+        <Login></Login>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+{/* second modal */}
+<div className="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabIndex="-1">
+  <div className="modal-dialog modal-dialog-centered">
+    <div className="modal-content">
+      <div className="modal-header">
+      <h5 className="modal-title" id="exampleModalToggleLabel">
+          <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+        </h5>
+
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+        <Register></Register>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+                {/* modal end */}
             </nav>
         </div>
     );

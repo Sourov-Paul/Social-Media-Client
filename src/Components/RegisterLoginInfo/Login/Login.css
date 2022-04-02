@@ -8,7 +8,7 @@ p.goToRegis {
     line-height: 17px;
     width: 280px;
     height: 17px;
-    /* font-weight: bold; */
+    
 }
 span.changeRegisterPage {
     color: #2395e7;
@@ -68,10 +68,12 @@ font-size: 14px;
 line-height: 16px;
 text-align: center;
 color: #008A45;
-    background:#EFFFF4;
+background:#EFFFF4;
     
 }
-
+.mainRegesterDiv{
+    display: block;
+}
 .modal-header {
     background:#EFFFF4;
 }

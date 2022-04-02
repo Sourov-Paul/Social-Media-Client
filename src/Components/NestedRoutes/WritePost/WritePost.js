@@ -9,7 +9,8 @@ const WritePost = () => {
   const {user,logOut}=useAuth()
     return (
         <div className='mainWriteDiv'>
-              <Link to='linkAndRoute' className="writePost" > Write a Post <i className="fa-solid fa-caret-down"></i> </Link>
+              <Link to='linkAndRoute' className="writePost" >
+                 Write a Post <i className="fa-solid fa-caret-down"></i> </Link>
 
 
 

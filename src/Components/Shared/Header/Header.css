@@ -35,3 +35,8 @@ img.userImage {
     height: 36px;
     border-radius: 21px;
 }
+
+button.navLogin {
+    background: white;
+    border: none;
+}

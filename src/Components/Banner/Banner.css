@@ -53,7 +53,7 @@ button.joinNow {
     font-family: 'IBM Plex Sans Arabic';
     border-radius: 14px;
     font-weight: 500;
-    display: none;
+    /* display: none; */
 }
 
 

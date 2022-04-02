@@ -81,14 +81,14 @@ const Login = () => {
           </button>
 
 
-<ResetPass></ResetPass>
+        <ResetPass></ResetPass>
          </div>
           </form>
           
         </div>
         <div className="secondRegisterDiv col-sm-12  col-md-6 col-lg-6">
        <p className='goToRegis'> Don’t have an account yet? 
-        <span className='changeRegisterPage' data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal"><Link style={{textDecoration:'none'}} to='/register'>Create new for free!</Link></span></p>
+        <span className='changeRegisterPage' data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" data-bs-dismiss="modal"><Link style={{textDecoration:'none'}} to='/register'>Create new for free!</Link></span></p>
         <img className="img-fluid" src="https://i.ibb.co/mq00vr4/create-Account.png" alt="" />
         </div>
         </div>
